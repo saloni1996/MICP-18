@@ -34,7 +34,7 @@ int unique_sub(string str)
 			hash[str[i]]=1;
 			++cnt;
 			if(cnt>comp_len)
-			comp_len=crnt;
+			comp_len=cnt;
 		}
 		
 	}
