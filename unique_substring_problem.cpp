@@ -3,13 +3,21 @@
 #include<string>
 using namespace std;
 
+//function to calculate the length of unique substring in the input
 int unique_sub(string str)
 {
 	int len = str.length();
-	int comp_len=0,cnt=0,start=0;
+	//length of string
 	
-	char crnt;
-	int hash[256]={0};
+	if(len==0)
+		return -1;
+	else
+		if(len==1)
+			return len;
+	else
+	{
+		int comp_len=0,i=0,j=len-1;
+	
 	
 	for(int i=0;i<len;i++)
 	{
@@ -39,7 +47,7 @@ int unique_sub(string str)
 		
 	}
 	return comp_len;
-	
+	}
 	
 }
 
